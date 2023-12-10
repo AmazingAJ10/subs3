@@ -1,0 +1,14 @@
+{
+  "resourceName": "unfriendlybucket",
+  "policyUUID": "88165edf",
+  "bucketName": "stupidbucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

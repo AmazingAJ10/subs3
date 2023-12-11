@@ -32,6 +32,8 @@ export declare type EditSubOverridesProps = {
     Button?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type EditSubProps = React.PropsWithChildren<Partial<FlexProps> & {
+    sub?: any;
+} & {
     overrides?: EditSubOverridesProps | undefined | null;
 }>;
 export default function EditSub(props: EditSubProps): React.ReactElement;

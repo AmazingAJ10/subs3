@@ -6,11 +6,13 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import MyIcon from "./MyIcon";
 import { Button, Flex, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function EditSub(props) {
-  const { overrides, ...rest } = props;
+  const { sub, overrides, ...rest } = props;
+  const frameFourFourFourOnClick = useNavigateAction({ type: "url", url: "/" });
+  const buttonOnMouseUp = useNavigateAction({ type: "url", url: "/" });
   return (
     <Flex
       gap="16px"
@@ -62,6 +64,9 @@ export default function EditSub(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            onClick={() => {
+              frameFourFourFourOnClick();
+            }}
             {...getOverrideProps(overrides, "Frame 444")}
           >
             <MyIcon
@@ -163,6 +168,9 @@ export default function EditSub(props) {
           isDisabled={false}
           variation="primary"
           children="UPDATE"
+          onMouseUp={() => {
+            buttonOnMouseUp();
+          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

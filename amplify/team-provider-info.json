@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "subs3614d3885": {}
+      },
+      "storage": {
+        "unfriendlybucket": {}
       }
     }
   }

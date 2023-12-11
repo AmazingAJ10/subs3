@@ -23,8 +23,8 @@ export default function SubCardCollection(props) {
   const [instanceKey, setInstanceKey] = React.useState("newGuid");
   const [loading, setLoading] = React.useState(true);
   const [maxViewed, setMaxViewed] = React.useState(1);
-  const pageSize = 5;
-  const isPaginated = true;
+  const pageSize = 4;
+  const isPaginated = false;
   React.useEffect(() => {
     nextToken[instanceKey] = "";
     apiCache[instanceKey] = [];

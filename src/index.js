@@ -21,7 +21,9 @@ Amplify.configure(awsconfig);
 root.render(
     <React.StrictMode>
       <BrowserRouter>
-          <App/>
+      <ThemeProvider>
+        <App/>
+      </ThemeProvider>
       </BrowserRouter>
     </React.StrictMode>   
 );
